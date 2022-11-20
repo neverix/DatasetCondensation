@@ -224,7 +224,7 @@ def distance_wb(gwr, gws):
         gwr = gwr.reshape(shape[0], shape[1] * shape[2])
         gws = gws.reshape(shape[0], shape[1] * shape[2])
     elif len(shape) == 2: # linear, out*in
-        tmp = 'do nothing'
+        pass
     elif len(shape) == 1: # batchnorm/instancenorm, C; groupnorm x, bias
         gwr = gwr.reshape(1, shape[0])
         gws = gws.reshape(1, shape[0])
